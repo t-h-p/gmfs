@@ -1,4 +1,5 @@
 #include<dirent.h>
+#include<sys/stat.h>
 #include "nodes.h"
 
 typedef struct Node {
@@ -7,6 +8,6 @@ typedef struct Node {
     struct node *children[];
 } Node_t;
 
-struct Node* node_gen(struct dirent d) {
-
+struct Node* createNode(struct dirent d) {
+    
 }
